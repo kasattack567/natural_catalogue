@@ -1,0 +1,4 @@
+aw_product_id,product_name,aw_deep_link,search_price,currency,brand_name,merchant_category,colour,large_image,suitable_for,material,in_stock,last_updated
+1001,Pure Linen Shirt,https://example.com/product/1001,40.00,GBP,Example Retailer,Womenswear > Shirts,Natural,https://example.com/image1.jpg,Female,100% Linen,1,2026-10-07
+1002,Cotton Stretch Jeans,https://example.com/product/1002,55.00,GBP,Example Retailer,Menswear > Jeans,Indigo,https://example.com/image2.jpg,Male,"98% Cotton, 2% Elastane",1,2026-10-07
+1003,Wool Crew Neck,https://example.com/product/1003,79.00,GBP,Example Retailer,Menswear > Knitwear,Navy,https://example.com/image3.jpg,Male,100% Wool,1,2026-10-07

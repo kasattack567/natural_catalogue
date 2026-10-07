@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Natural — Material-first fashion pilot</title>
+<meta name="description" content="Browse mainstream clothes made without petroleum-derived synthetic fibres.">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="brand">NATURAL</div>
+  <nav class="topnav" aria-label="Catalogue">
+    <button class="nav-link active" data-gender="All">All</button>
+    <button class="nav-link" data-gender="Women">Women</button>
+    <button class="nav-link" data-gender="Men">Men</button>
+  </nav>
+  <div class="header-actions"><button class="pill" id="filterButton">Filters</button></div>
+</header>
+
+<section class="hero">
+  <div class="kicker">Material-first fashion</div>
+  <h1>Clothes without the synthetics.</h1>
+  <p>Browse mainstream fashion made from natural fibres. We check the composition first, so the catalogue starts clean by default.</p>
+  <form class="search-wrap" id="searchForm">
+    <input id="searchInput" autocomplete="off" placeholder="Search linen shirts, cotton, M&S, Reiss…" aria-label="Search catalogue">
+    <button>Search</button>
+  </form>
+</section>
+
+<main class="content">
+  <div class="toolbar">
+    <div class="toolbar-left"><span class="result-count" id="resultCount"></span><div class="active-filters" id="activeFilters"></div></div>
+    <div class="toolbar-right">
+      <select class="sort" id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="priceLow">Price: low to high</option><option value="priceHigh">Price: high to low</option><option value="brand">Brand</option></select>
+      <button class="pill" id="mobileFilterButton">Filter</button>
+    </div>
+  </div>
+  <section class="grid" id="grid" aria-live="polite"></section>
+</main>
+
+<div class="overlay" id="filterOverlay">
+  <aside class="drawer" aria-label="Filters">
+    <div class="drawer-head"><h2>Filters</h2><button class="close" id="closeFilters" aria-label="Close filters">×</button></div>
+    <div class="filter-group"><div class="filter-title">Brand</div><div class="filter-options" id="brandFilters"></div></div>
+    <div class="filter-group"><div class="filter-title">Material</div><div class="filter-options" id="materialFilters"></div></div>
+    <div class="filter-group"><div class="filter-title">Category</div><div class="filter-options" id="categoryFilters"></div></div><div class="filter-group"><div class="filter-title">Price</div><div class="filter-options"><button class="filter-chip" data-price="under50">Under £50</button><button class="filter-chip" data-price="50to100">£50–£100</button><button class="filter-chip" data-price="over100">£100+</button></div></div>
+    <div class="filter-group"><div class="switch-row"><div><strong>In stock only</strong><small>Hide products currently marked unavailable.</small></div><div class="switch on" id="availabilitySwitch" role="switch" aria-label="In stock only"></div></div></div>
+    <div class="filter-group"><div class="switch-row"><div><strong>Material standard</strong><small>This pilot only contains products whose listed garment composition is made from natural fibres. Trims can still be excluded by retailers from their composition statements.</small></div></div></div>
+    <div class="filter-actions"><button id="clearFilters">Clear</button><button class="apply" id="applyFilters">Show products</button></div>
+  </aside>
+</div>
+
+<div class="modal-overlay" id="productModal">
+  <div class="modal">
+    <button class="close modal-close" id="modalClose" aria-label="Close product">×</button>
+    <img id="modalImage" alt="Product">
+    <div class="modal-content">
+      <div class="brandline" id="modalBrand"></div><h3 id="modalName"></h3><div class="modal-price" id="modalPrice"></div>
+      <div class="composition"><div class="filter-title">Listed composition</div><div id="modalComposition"></div></div>
+      <div class="verified" id="modalMeta"></div><a class="modal-buy" id="modalBuy" target="_blank" rel="noopener">View retailer →</a>
+    </div>
+  </div>
+</div>
+
+<footer class="footer-note"><strong>Pilot catalogue.</strong> Product prices, availability and composition can change at the retailer. The live version will refresh automatically from retailer/affiliate data before displaying products.</footer>
+<script src="catalog.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

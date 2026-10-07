@@ -1,0 +1,11 @@
+product_id,brand,name,composition,strict_natural,non_synthetic,needs_review,included,reason
+ms-w-pure-linen-shirt,M&S,Pure Linen Shirt,100% linen,True,True,False,True,natural fibres only
+ms-m-linen-rich-short-sleeve,M&S,Regular Fit Linen Rich Short Sleeve Shirt,"55% linen, 45% cotton",True,True,False,True,natural fibres only
+ms-m-cotton-linen-striped,M&S,Cotton Linen Blend Striped Shirt,"52% linen, 48% cotton",True,True,False,True,natural fibres only
+arket-m-regular-linen-white,ARKET,Regular Linen Shirt,100% linen,True,True,False,True,natural fibres only
+reiss-m-astra-cotton-twill,Reiss,Cotton-Twill Twin-Pocket Regular-Fit Shirt,100% cotton,True,True,False,True,natural fibres only
+ms-m-linen-garment-dye,M&S,Pure Linen Garment Dye Shirt,100% linen,True,True,False,True,natural fibres only
+example-synthetic,M&S,Example Wool Blend Jumper,"49% acrylic, 27% polyamide, 14% cotton, 8% wool, 2% elastane",False,False,False,False,"contains synthetic fibre: Acrylic, Elastane, Nylon"
+example-modal,Example Brand,Example Linen Modal Shirt,"50% modal, 50% linen",False,True,False,False,non-synthetic regenerated cellulose present: Modal
+example-unknown,Example Brand,Example Unclear Top,Cotton blend,False,False,True,False,composition has no parseable percentage/material pairs
+example-lining,Example Brand,Example Cotton Jacket,Outer: 100% cotton. Lining: 100% polyester,False,False,False,False,contains synthetic fibre: Polyester
